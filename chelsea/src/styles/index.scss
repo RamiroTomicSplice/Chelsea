@@ -1,0 +1,17 @@
+
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*! purgecss end ignore */
+
+
+@import 'global';
+@import 'fonts';
+@import 'buttons';
+@import 'typography';
+@import 'forms';
+
+@import 'animate';
+
+

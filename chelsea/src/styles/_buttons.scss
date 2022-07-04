@@ -1,0 +1,44 @@
+@layer base {
+    .btn {
+        @apply text-12 leading-20 rounded-48 inline-block  transition-all duration-300 text-center cursor-pointer relative z-[3];
+        padding: 12px 24px;
+
+        /* button primary */
+        &--cobalt {
+            @apply text-white bg-cobalt-100;
+            @apply hover:bg-cobalt-shade;
+        }
+        &--black {
+            @apply text-white bg-black-100;
+            @apply hover:bg-black-gray;
+        }
+        &--sky {
+            @apply text-black-100 bg-sky-100;
+            @apply hover:bg-sky-shade;
+        }
+        &--lightGray {
+            @apply text-black-100 bg-buttonGray;
+            @apply hover:bg-hoverButtonGray;
+        }
+        &--white {
+            @apply text-black-100 bg-white;
+            @apply hover:bg-buttonGray;
+        }
+        &--gray {
+            @apply text-white bg-gray;
+            @apply hover:bg-gray;
+        }
+
+        /* button outline */
+
+        /* button large */
+        &--lg {
+            @apply py-3.5 px-8 text-15 leading-24 rounded-64;
+        }
+        
+        .cp-icon-modalClose {
+            padding: 0.5rem 0.5rem 0.5rem 0.55rem;
+            @apply transition-all duration-300 rounded-full;
+        }
+    }
+}

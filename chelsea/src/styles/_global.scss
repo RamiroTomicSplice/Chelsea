@@ -1,0 +1,299 @@
+hs-form-iframe {
+    width: 100% !important;
+}
+body {
+    @apply font-body font-400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*! purgecss end ignore */
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: calc(100% - 24px) !important;
+    }
+}
+
+.h-auto-important {
+    height: auto !important;
+}
+
+.container {
+    .container {
+        padding: 0;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+}
+
+.mainCardWrapper:hover .border--increase--cobalt::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #0061e9;
+    transition: all 0.3s;
+}
+
+.mainCardWrapper:hover .border--increase::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #33bbff;
+    transition: all 0.3s;
+}
+
+.mainCardWrapper:hover .border--increase--black::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #000000;
+    transition: all 0.3s;
+}
+
+.border--main:hover .border--increase--cobalt::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #0061e9;
+    transition: all 0.3s;
+}
+
+.border--main:hover .border--increase::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #33bbff;
+    transition: all 0.3s;
+}
+
+.border--main:hover .border--increase--black::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #000000;
+    transition: all 0.3s;
+}
+
+.border--main:hover .border--increase--white::after {
+    width: 48px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.border--increase {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 1px;
+    background: rgba(51, 187, 255, 0.4);
+    &::after {
+        width: 8px;
+        height: 1px;
+        position: absolute;
+        content: '';
+        background: #33bbff;
+        transition: all 0.3s;
+    }
+}
+
+.border--increase--white {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 1px;
+    background: rgba(51, 187, 255, 0.4);
+    &::after {
+        width: 8px;
+        height: 1px;
+        position: absolute;
+        content: '';
+        background: #fff;
+        transition: all 0.3s;
+    }
+}
+
+.border--increase--cobalt {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 1px;
+    background: rgba(0, 97, 233, 0.4);
+    &::after {
+        width: 8px;
+        height: 1px;
+        position: absolute;
+        content: '';
+        background: #0061e9;
+        transition: all 0.3s;
+    }
+}
+
+.border--increase--black {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    &::after {
+        width: 8px;
+        height: 1px;
+        position: absolute;
+        content: '';
+        background: #000000;
+        transition: all 0.3s;
+    }
+}
+
+.wrapper {
+    @apply xl:px-[3.333%] px-3;
+}
+
+.video-player {
+    height: initial !important;
+    width: 100% !important;
+}
+
+.wrapperCarousal {
+    padding-left: calc(3.333% + 24px);
+    padding-right: calc(3.333% + 24px);
+}
+
+.wrapperPartnerCarousal {
+    padding-left: calc(18.88866666666667%);
+    padding-right: calc(18.88866666666667%);
+}
+
+.img-hover-zoom--quick-zoom img {
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+.img-hover-zoom {
+    overflow: hidden; /* Removing this will break the effects */
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.has-dummy-content {
+    .lead--regular {
+        color: #ff00ff !important;
+    }
+}
+
+.hideScrollBar {
+    -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
+    scrollbar-width: none !important; /* for Firefox */
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+.classScheduleHeight {
+    max-height: calc(100vh - 64px);
+}
+.gn-content {
+    a {
+        @apply text-cobalt-100;
+    }
+    ul,
+    ol {
+        @apply my-5;
+    }
+}
+
+.lists {
+    ol {
+        position: relative;
+        padding-left: 30px;
+        li {
+            margin-bottom: 15px;
+        }
+    }
+    > li,
+    ul li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        ul li {
+            &:before {
+                width: 10px;
+                height: 10px;
+                background-color: #7d5fff;
+            }
+        }
+        ul,
+        ol {
+            padding-top: 10px;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 1px;
+            border-radius: 0;
+            border-bottom: 1px solid #7d5fff;
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+    }
+
+    &--ordered {
+        list-style: decimal;
+        padding-left: 40px;
+        @media only screen and (max-width: 768px) {
+            padding-left: 30px;
+        }
+        > li {
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    ol {
+        margin: 0;
+        list-style: decimal;
+        ol {
+            list-style: lower-alpha;
+            ol {
+                list-style: lower-roman;
+            }
+        }
+    }
+}
+
+
+.block {
+    &--center {
+        .block--wrapper {
+            @apply flex items-center justify-center;
+        }
+    }
+
+    &--left {
+        .block--wrapper {
+            @apply flex items-center justify-start;
+        }
+    }
+    &--right {
+        .block--wrapper {
+            @apply flex items-center justify-end;
+        }
+    }
+}

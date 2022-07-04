@@ -1,0 +1,70 @@
+@import 'global';
+@layer base {
+    h1,
+    .h1 {
+        @apply text-56 leading-64 tracking-tighest;
+        @apply md:text-68 md:leading-76;
+        @apply lg:text-112 lg:leading-112;
+        @include ss03;
+    }
+    h2,
+    .h2 {
+        @apply text-40 leading-48 tracking-tighest;
+        @apply md:text-72 md:leading-80;
+        @include ss03;
+    }
+    h3,
+    .h3 {
+        @apply text-32 leading-40 tracking-tighter;
+        @apply md:text-48 md:leading-56;
+        @include ss03;
+    }
+    h4,
+    .h4 {
+        @apply text-24 leading-32 tracking-tighter;
+        @apply md:text-32 md:leading-40;
+        @include ss03;
+    }
+    h5,
+    .h5 {
+        @apply text-20 leading-28 tracking-tight;
+        @apply md:text-24 md:leading-32;
+        @include ss03;
+    }
+
+    .label {
+        &--largeBold {
+            @apply text-15 leading-24 font-united font-600 tracking-widest uppercase;
+        }
+        &--heavy {
+            @apply text-15 leading-24 font-united font-600 tracking-widest uppercase;
+        }
+        &--bold {
+            @apply text-12 leading-20 font-united font-600 tracking-widest uppercase;
+        }
+        &--smallBold {
+            @apply text-10 leading-18 font-united font-600 tracking-widest uppercase;
+        }
+        &--smallAlt {
+            @apply text-10 leading-14 font-united font-600 tracking-widest uppercase;
+        }
+    }
+    .lead {
+        &--regular {
+            @apply text-15 leading-22 tracking-wide;
+            @apply md:text-16 md:leading-24;
+        }
+        &--large {
+            @apply text-18 leading-26 tracking-half;
+            @apply md:text-20 md:leading-28;
+        }
+        &--extraLarge {
+            @apply text-20 leading-28 tracking-half;
+            @apply md:text-24 md:leading-32 md:tracking-half;
+        }
+        &--small {
+            @apply text-12 leading-18 tracking-wider;
+            @apply md:text-14 md:leading-20;
+        }
+    }
+}
